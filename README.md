@@ -1,13 +1,13 @@
 # Install Guide
 
 ## Instructions
-Enter variables in vars.py
+Enter variables in vars.py  
 (including SSH Keypair name)
 
-Enter parameter name (path) on line 15 in and the config rule name on line 16:
+Enter parameter name (path) on line 15 in and the config rule name on line 16:  
 step-functions/lambda/update_asg_ami.py
-and zip file, from lambda/ run:
-zip update_asg_ami.zip update_asg_ami.py
+and zip file, from lambda/ run:  
+zip update_asg_ami.zip update_asg_ami.py   
 
 Setup Virtual Environment
 ```
@@ -35,12 +35,12 @@ Run the step function with this payload, enter stack values used in vars.py file
 ```
 
 ### Note:
-If you run the step function a second time before the first instance 
-has been removed in "Terminating" state, then you need to remove the tags from
+If you run the step function a second time before the first instance  
+has been removed in "Terminating" state, then you need to remove the tags from 
 it, or wait for it to disappear from the console.
 
 (c) Copyright 2020 - NickTheSecurityDude
 
 #### Disclaimer:
-For informational/educational purposes only. Bugs are likely and can be reported on github.
+For informational/educational purposes only. Bugs are likely and can be reported on github. 
 Using this will incur AWS charges.
